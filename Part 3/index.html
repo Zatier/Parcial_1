@@ -28,6 +28,17 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 
 // CREA TU FUNCION challenge1 aqui:
 
+function challenge1() {
+
+var CuantosBotones = prompt("¿Cuantos Botones más quieres?")
+    
+for (var i = 0; i < CuantosBotones; i++) {
+
+var doc = document.getElementById("dummy");
+var element = document.createElement("button");
+element.innerHTML = nombres[i];
+doc.appendChild(element);
+}
 
 
 /*
@@ -45,6 +56,7 @@ A) Define un objeto tipo "Dog" que reciba 3 parametros
 1) Nombre
 2) Color
 3) Raza
+
 
 
 B) Crea 3 objectos siguiendo esa clase con diferentes valores
@@ -66,6 +78,23 @@ Deberia escribir en consola
 
 
 */
+
+var Dog = new Object()
+Dog.Nombre = "Juan"
+Dog.Color = "Negro"
+Dog.Raza = "Rottweiler"
+
+function Perro(Nombre, Color, Raza){
+    this.Nombre = Nombre;
+    this.Color = Color;
+    this.Raza = Raza;
+}
+
+var lucas = new Dog('lucas','blanco','dalmata')
+
+var juna = new Dog('juna','cafe','pastor aleman')
+
+var andres = new Dog('andres','amarillo','golden retriever')
 
 // CREA TU FUNCION printInfo() AQUI
 

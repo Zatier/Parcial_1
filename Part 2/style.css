@@ -1,43 +1,63 @@
 header {
-
+display:flex;
+flex-direction:row;
+justify-content: space-evenly;
+align-content: center;
 
 }
 
 
 h2 {
-
+display:flex;
+justify-content: center;
+border:1px solid rgba(211,211,211,.5);
+width:33%;
+margin:0 .1% 0 .1%;
 }
 
 .nav {
+display:flex;
+justify-content: space-evenly;
+padding-right: 3%
+}
 
-
-  }
-
-  li {
-
-
-  }
+li {
+list-style-type: none;
+padding-left: 6.2%;
+border:1px solid rgba(211,211,211,.5);
+width: 25%;
+margin:0 1% 0 1%;
+}
 
   .content{
-
+display:flex;
+flex-flow: row;
+border:1px solid rgba(211,211,211,.5);
 }
 
   .aside {
-
+display:flex;
+flex-direction: column;
+border:1px solid rgba(211,211,211,.5);
+width:250%;
   }
 
   .slidebox{
-
-   
+display:flex;
+flex: 1; 
+border:1px solid rgba(211,211,211,.5);
+padding-left: 40%;
   }
 
   .article{
-
+display:flex;
+flex-direction:row;
   }
 
-
 .poem{
-
+display:flex;
+flex:1;
+border:1px solid rgba(211,211,211,.5);
 }
 
 
@@ -48,7 +68,7 @@ h2 {
 
   } 
 header{
-
+display:none; 
 }
 }
 
@@ -56,17 +76,18 @@ header{
 @media (max-width:599px) {
 
 header,.content{
-
+display:none;
 }
 
 .nav {
-
-
+display:flex;
+flex-direction: column;
+justify-content: space-evenly;
   }
 
 
 .nav > li {
-
+padding-left: 10%
 }
 
 
